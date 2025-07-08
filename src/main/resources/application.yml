@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: shopping-service
+  profiles:
+    active: dev
+
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8086
+      username: root
+      password: scr3t
+      fail-fast: true
