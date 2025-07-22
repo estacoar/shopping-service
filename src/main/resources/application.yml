@@ -3,12 +3,11 @@ spring:
     name: shopping-service
   profiles:
     active: dev
-
   config:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://localhost:8086
+      uri: http://localhost:8081
       username: root
-      password: scr3t
+      password: s3cr3t
       fail-fast: true
